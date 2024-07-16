@@ -228,3 +228,46 @@ nav ul li a{
         margin-left: 20px;
     }
 }
+/* Fact part start */
+.fact{
+    margin-bottom: 180px;
+}
+.fact .section-des{
+    max-width: 515px;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+.fact-card{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-num{
+    color: rgb(66, 66, 66);
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fact-des{
+    color: rgb(114, 114, 114);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* Fact responsive media query */
+@media screen and (max-width: 576px){
+    .fact-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 85px;
+        gap: 20px;
+    }
+}
