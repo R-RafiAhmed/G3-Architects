@@ -271,3 +271,31 @@ nav ul li a{
         gap: 20px;
     }
 }
+/* Sponsor part start */
+.sponsor{
+    margin-bottom: 130px;
+}
+.sponsor-info{
+    max-width: 515px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-info .section-des{
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+.sponsor-company img{
+    filter: grayscale(100%);
+}
+/* sponsor responsive media query */
+@media screen and (max-width: 576px){
+    .sponsor-company{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 100px;
+    }
+}
