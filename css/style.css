@@ -28,6 +28,11 @@ main{
     background: rgb(255, 144, 14);
     border: none;
 }
+.section-title{
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
  .section-des{
     color: rgb(114, 114, 114);
     font-size: 1rem;
@@ -85,7 +90,7 @@ nav ul li a{
     line-height: 26px;
     margin-bottom: 32px;
 }
-.banner-img{
+.banner-img img{
     width: 100%;
     padding: 50px 0 45px 0;
 }
@@ -158,5 +163,68 @@ nav ul li a{
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .team{
         flex-direction: column;
+    }
+}
+/* Features part start */
+.features{
+    display: flex;
+    gap: 145px;
+    margin-bottom: 130px;
+}
+.feature-cont .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+.feature-cont .section-des{
+    max-width: 585px;
+}
+.feature-card{
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 30px;
+}
+.feature-card h5{
+    color: rgb(19, 19, 19);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.feature-card p{
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-img button{
+    padding: 46px 42px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    border: none;
+    color: #FFFFFF;
+    margin-left: -92px;
+    margin-top: -125px;
+}
+.feature-img button .year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature-img button .exp{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/* Features Responsive media query */
+@media screen and (max-width: 576px) {
+    .features{
+        flex-direction: column;
+    }
+    .feature-img button{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
